@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+ul {
+    list-style: none;
+}
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+.contenedor {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+.seccion {
+    padding: 90px 0;
+}
+.header {
+    background-color: #172554;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(5, 4, 4, 0.15);
+}
+.header-contenido {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    gap: 18px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.logo img { 
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain; 
+}
+.logo-text {
+    color: #fcfcfc;
+}
+.logo-text span {
+    color: #4b7bffd6;
+}
+.nav-lista {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-lista a {
+    color: #e2e8f0;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-lista a:hover {
+    color: #6782c5;
+}
+
+.inicio {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background:    
+    linear-gradient(135deg, #020617 0%,#243a6d 50%, #172554 100%);
+    color: #fdfcfc; 
+}
+.inicio-contenido {
+    align-items: center;
+}
+.inicio-texto {
+    max-width: 500px;
+}
+.subtitulo {
+    color: #24c8ec;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.inicio h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.inicio-descripcion {
+    color: #ddf0f5;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.inicio-botones {
+    display: inline-block;
+    gap: 15px;
+}
+.boton{
+    display: inline-block;
+    background-color: #1f6cb4;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.boton:hover {
+    background-color: #1b82f8;
+    transform: translateY(-2px);
+}
+ 
+.boton2 {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #276dd7;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.boton2:hover {
+    background-color: #9fbdf0;
+    border-color: #75a7ec;
+}
+
+.cursos-seccion {
+    background-color: #f1f5f9;
+    padding: 70px 5%;
+}
+.cursos-contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+.cursos-titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.cursos-titulo .subtitulo {
+    color: #1e293b;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.cursos-principal {
+    color: #1e293b;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.cursos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+.curso-card { 
+    display: flex; 
+    flex-direction: 
+    column; min-width: 0; 
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08); 
+    transition: transform 0.3s ease; 
+} 
+.curso-card:hover { 
+    transform: translateY(-4px); 
+}
+
+
+.curso-imagen {
+    position: relative;
+    height: 160px;
+}
+.curso-imagen img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+ }
+ .curso-nivel { 
+    position: absolute; 
+    top: 14px; left: 14px; 
+    background-color: #dbeafe; 
+    color: #1d4ed8; 
+    padding: 6px 12px; 
+    border-radius: 20px; 
+    font-size: 0.75rem; 
+    font-weight: 700; 
+}
+.curso-detalles { 
+    padding: 18px; 
+    flex: 1; 
+} 
+.curso-titulo { 
+    color: #0f172a; 
+    font-size: 1.15rem; 
+    margin-bottom: 10px; 
+} 
+.curso-descripcion { 
+    color: #64748b; 
+    font-size: 0.88rem; 
+    line-height: 1.7;
+ } 
+ .curso-pie { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 9px; 
+    padding: 16px 18px 18px; 
+    border-top: 1px solid #e2e8f0; 
+} 
+.precio { 
+    flex-basis: 100%; 
+    margin-bottom: 5px; 
+    color: #0f172a; 
+    font-size: 1.25rem; 
+    font-weight: 800; 
+} 
+.boton-info, .boton-inscripcion { 
+    flex: 1;
+    text-align: center; 
+    padding: 10px 8px; 
+    border: 1px solid #4b7bff; 
+    border-radius: 7px; 
+    font-size: 0.8rem; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease; 
+}
+.boton-info { 
+    color: #345bd1; 
+    background-color: transparent; 
+}
+.boton-info:hover { 
+    background-color: #eff6ff; 
+}
+.boton-inscripcion { 
+    color: #ffffff; 
+    background-color: #4b7bff; 
+} 
+.boton-inscripcion:hover { 
+    background-color: #345bd1; 
+} 
+@media (max-width: 850px) { 
+    .cursos-lista { grid-template-columns: repeat(2, minmax(0, 1fr)); } 
+} 
+@media (max-width: 550px) { 
+.cursos-lista { grid-template-columns: 1fr; } 
+}
+
+/*multimedia*/
+.multimedia-seccion {
+    padding: 75px 20px;
+    background-color: #eaf0f8;
+    text-align: center;
+}
+
+.multimedia-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.multimedia-seccion h2 {
+    margin-bottom: 15px;
+    color: #0f172a;
+    font-size: clamp(1.7rem, 4vw, 2.3rem);
+}
+
+.multimedia-descripcion {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.video-contenedor {
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #020617;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+.video-contenedor video {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+.video-pie {
+    margin-top: 15px;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .multimedia-seccion {
+        padding: 50px 16px;
+    }
+
+    .video-contenedor {
+        border-radius: 10px;
+    }
+}
+
+/*nosotros*/
+#nosotros {
+    padding: 80px 8%;
+    background: linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #243a6d 60%,
+        #312e81 100%
+    );
+    color: #ffffff;
+    text-align: center;
+}
+
+#nosotros h2 {
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    margin-bottom: 22px;
+}
+
+#nosotros p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #e2e8f0;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+
+/* Contacto e inscripcion */
+#inscripcion,
+#contacto {
+    padding: 75px 20px;
+    background-color: #f1f5f9;
+}
+
+#inscripcion h2,
+#contacto h2 {
+    max-width: 600px;
+    margin: 0 auto 12px;
+    color: #0f172a;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Forms */
+#inscripcion form,
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 600px;
+    margin: 25px auto 0;
+    padding: 30px;
+
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+#inscripcion label,
+#contacto label {
+    margin-top: 8px;
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+#inscripcion input,
+#inscripcion select,
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: #f8fafc;
+
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    transition: border-color 0.2s ease,box-shadow 0.2s ease;
+}
+
+/*al seleccionar el campo*/
+#inscripcion input:focus,
+#inscripcion select:focus,
+#contacto input:focus,
+#contacto textarea:focus {
+    outline: none;
+    border-color: #4b7bff;
+    box-shadow: 0 0 0 3px rgba(75, 123, 255, 0.15);
+}
+
+
+/*para msj*/
+#contacto textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#inscripcion button,
+#contacto button {
+    margin-top: 15px;
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 7px;
+    background-color: #0631a9;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+#inscripcion button:hover,
+#contacto button:hover {
+    background-color: #0036d6;
+    transform: translateY(-2px);
+}
+
+
+/*para adaptar a celulares*/
+
+@media (max-width: 600px) {
+    #nosotros {
+        padding: 60px 6%;
+    }
+
+    #inscripcion,
+    #contacto {
+        padding: 55px 16px;
+    }
+
+    #inscripcion h2,
+    #contacto h2 {
+        font-size: 1.7rem;
+    }
+
+    #inscripcion form,
+    #contacto form {
+        padding: 22px 18px;
+    }
+}
+
+/* Pie */
+footer {
+    background: linear-gradient(135deg, #0f172a, #243a6d);
+    color: #e2e8f0;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.85rem;
+    border-top: 3px solid #4b7bff;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
